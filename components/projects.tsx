@@ -38,20 +38,19 @@ export function Projects() {
       title: 'Study Tools & Learning Platform',
       description:
         'A flashcard-based learning platform that helps students memorize and review information effectively through spaced repetition and interactive study sessions.',
-      image: '/placeholder.svg?height=400&width=600',
+      image: '/projects/brainflip.png',
       tags: ['Next.js', 'Tailwind CSS', 'PostgreSQL', 'NestJS'],
       liveUrl: 'https://brainflip.vercel.app',
       color: 'from-purple-500 to-pink-500'
     },
     {
       id: 2,
-      title: 'Task Management App',
+      title: 'Jewelry E-commerce',
       description:
-        'A collaborative task management application with real-time updates and team features.',
-      image: '/placeholder.svg?height=400&width=600',
-      tags: ['React', 'Node.js', 'MongoDB', 'Socket.io'],
-      githubUrl: 'https://github.com',
-      liveUrl: 'https://example.com',
+        'A modern e-commerce platform for a jewelry store featuring product catalog, shopping cart, and secure checkout system.',
+      image: '/projects/bijewelry.png',
+      tags: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
+      liveUrl: 'https://bijewelry.vercel.app/',
       color: 'from-cyan-500 to-blue-500'
     },
     {
@@ -59,10 +58,9 @@ export function Projects() {
       title: 'Portfolio Website',
       description:
         'A responsive portfolio website built with modern web technologies.',
-      image: '/placeholder.svg?height=400&width=600',
-      tags: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
-      githubUrl: 'https://github.com',
-      liveUrl: 'https://example.com',
+      image: '/projects/portfolio.png',
+      tags: ['Next.js', 'Tailwind CSS', 'Framer Motion', 'AI'],
+      liveUrl: 'https://biiportfolio.vercel.app/',
       color: 'from-amber-500 to-orange-500'
     },
     {
@@ -125,9 +123,7 @@ export function Projects() {
             <motion.div key={project.id} variants={item}>
               <Card className='h-full overflow-hidden hover:shadow-lg transition-shadow duration-300 dark:bg-gray-800/50 border-0 shadow-md'>
                 <div className='relative h-48 overflow-hidden'>
-                  <div
-                    className={`absolute inset-0 bg-gradient-to-r ${project.color} opacity-20 z-10`}
-                  ></div>
+                  <div className={`absolute inset-0  z-10`}></div>
                   <Image
                     src={project.image || '/placeholder.svg'}
                     alt={project.title}
